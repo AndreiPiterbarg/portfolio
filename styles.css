@@ -1,51 +1,102 @@
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: #343a40;
-    color: #fff;
+    background-color: #343a40;
+    color: white;
+    padding: 100px 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    width: 100%;
+    /* Full width to center the title properly */
 }
 
-section {
-    padding: 60px 0;
+
+
+
+.profile-image {
+    margin-right: 20px;
+    /* Space between the image and title */
+    width: 200px;
+    /* Fixed width */
+    max-height: 400px;
+    /* Fixed height for a circular image */
+
 }
 
-section h2 {
-    margin-bottom: 30px;
-    font-size: 2rem;
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the title and nav buttons horizontally */
+    text-align: center;
+    /* Center text within the container */
+    margin-left: 20px;
+    /* Space between the image and the title */
 }
 
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+.title {
+    margin-bottom: 20px;
+    /* Space below the title */
 }
 
-.card-text {
-    font-size: 1rem;
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    /* Stack buttons vertically */
+    align-items: center;
+    /* Center buttons horizontally */
 }
 
-footer {
-    background: #343a40;
-    color: #fff;
+.nav-button {
+    margin: 5px 0;
+    /* Vertical space between buttons */
+    padding: 10px 20px;
+    /* Button padding */
+    border: none;
+    background-color: #343a40;
+    /* Button background color */
+    color: white;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
 }
 
-footer p {
-    margin: 0;
+.nav-button:hover,
+.nav-button.active {
+    background-color: #495057;
+    /* Background color on hover and active state */
 }
 
-footer a {
-    color: #fff;
-    transition: color 0.3s;
+.navbar-brand {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: bold;
+    /* Optional: Make the title bold */
+
+    font-size: 35px;
 }
 
-footer a:hover {
-    color: #17a2b8;
+.navbar-nav {
+    font-family: "Courier Prime", monospace;
+    font-weight: 500;
+    font-style: normal;
+    /* Optional: Make the title bold */
+
+    font-size: 20px;
+}
+
+.navbar {
+    padding: 1.8rem 1rem;
+    /* Increase the padding to make the navbar larger */
 }
