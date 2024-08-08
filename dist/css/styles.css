@@ -62,15 +62,11 @@ header {
     /* Increase the padding to make the navbar larger */
 }
 
-
-
-
-
-
-
-footer {
-    max-width: 1110px;
-    margin: 0 auto;
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
 }
 
 .card-img-top {
@@ -82,7 +78,7 @@ footer {
     /* Smooth transition for the image movement */
 }
 
-.card-img-container:hover {
+.card-img-container:hover .card-img-top {
     transform: scale(1.05);
     /* Slightly zoom the image on hover */
 }
@@ -164,7 +160,14 @@ footer {
 
 /* Add more hover states for additional images */
 
-card-imf-top .image-slider {
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
+
+.image-slider {
     position: relative;
 }
 
@@ -199,23 +202,20 @@ card-imf-top .image-slider {
     opacity: 0;
 }
 
-.card-title a {
-    color: inherit;
-    text-decoration: none;
+/* Add more hover states as needed */
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.card-title a:hover {
-    color: inherit;
-    text-decoration: none;
-}
-
-.carousel-control-prev-icons,
-.carousel-control-next-icons {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
+.card-img-container:hover .card-body {
+    opacity: 1;
 }
