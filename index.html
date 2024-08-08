@@ -14,6 +14,25 @@
             max-width: 1110px;
             margin: 0 auto;
         }
+
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .description {
+            color: #333;
+            /* Set text color to black */
+        }
+
+        .title {
+            color: #333;
+        }
+
+        .skills-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
     </style>
 </head>
 
@@ -41,25 +60,32 @@
         </div>
     </nav>
 
-    <header>
-
-
-        <img src="Photos\OennPhoto.jpg" alt="Profile Image" class="profile-image">
-
-        <h1 class="title">Andrei Piterbarg</h1>
-
-
-
-
-        <div class="description text-center">
-            <p>Hello! I'm Andrei Piterbarg, a passionate developer and artist. I love creating innovative solutions
-                and beautiful artworks. Welcome to my portfolio where you can explore my projects, skills, and
-                experiences.</p>
+    <header class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="Photos\OennPhoto.jpg" alt="Profile Image" class="profile-image">
+            </div>
+            <div class="col-md-6">
+                <h1 class="title">About me</h1>
+                <div class="description">
+                    <p>Hello! I'm Andrei Piterbarg, a passionate developer and artist, currently at the University of
+                        Pennsylvania majoring in Computer Science and minoring in art. <br>
+                        Welcome to my portfolio where you can explore my projects,
+                        skills, and experiences.</p>
+                    <h2>Skills (see projects)</h2>
+                    <ul class="skills-list">
+                        <li>Web Development (HTML, CSS, JavaScript, React, Node.js)</li>
+                        <li>Graphic Design (Blender, Adobe Photoshop, GIMP)</li>
+                        <li>Machine Learning (Python, TensorFlow, Scikit-learn)</li>
+                        <li>Experienced in Java, Python, React and HTML</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
+
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-
             <div>
                 <a href="https://www.linkedin.com/in/andrei-piterbarg-4ba967302/" class="text-white mr-2">
                     <i class="fab fa-linkedin-in"></i>
@@ -67,17 +93,14 @@
                 <a href="https://github.com/AndreiPiterbarg" class="text-white">
                     <i class="fab fa-github"></i>
                 </a>
-
             </div>
             <p class="footer-text">&copy; 2024 Andrei Piterbarg's Portfolio. All Rights Reserved.</p>
         </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
