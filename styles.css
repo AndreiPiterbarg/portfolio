@@ -17,8 +17,16 @@ header {
     /* Full width to center the title properly */
 }
 
+.text-white i {
+    font-size: 2em;
+    /* Adjust this value to increase or decrease the size */
+    padding-top: 20px;
+}
 
-
+.footer-text {
+    padding-top: 20px;
+    /* Adjust this value to increase or decrease the padding */
+}
 
 .profile-image {
     margin-right: 20px;
