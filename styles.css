@@ -21,9 +21,9 @@ header {
 }
 
 .profile-image {
-    margin-right: 20px;
     /* Space between the image and title */
-    width: 200px;
+    width: 300px;
+
     /* Fixed width */
     max-height: 400px;
     /* Fixed height for a circular image */
@@ -219,3 +219,4 @@ card-imf-top .image-slider {
   border: 1px solid black;
   background-image: none;
 }
+
